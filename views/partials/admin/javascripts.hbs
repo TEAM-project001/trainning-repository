@@ -1,0 +1,18 @@
+<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/datatable.js"></script>
+
+<script>
+    $('.counter-count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 5000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+</script>

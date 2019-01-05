@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    {{>admin/head}}
+</head>
+
+<body>
+    <div class="container-fluid admin-page">
+        <div class="row">
+            <div class="nav-pannle">
+                {{>admin/navbar}}
+            </div>
+            
+
+            <main class="col-md-9 col-xs-11 p-l-2 p-t-2" style="overflow:scroll">
+                <a href="#sidebar" data-toggle="collapse"><i class="fa fa-navicon fa-lg"></i></a>
+                <hr>
+                <div class="page-header">
+                    <h1>Bootstrap 4 Sidebar Menu</h1>
+                </div>
+                <p class="lead">A responsive, multi-level vertical accordion.</p>
+
+                <div class="container-fluid">
+                    <div class="row">{{>admin/counters}}</div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">{{>admin/datatable}}</div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </main>
+        </div>
+    </div>
+    {{>admin/javascripts}}
+</body>
+
+</html>
